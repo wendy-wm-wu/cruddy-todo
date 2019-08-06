@@ -54,7 +54,7 @@ exports.getNextUniqueId = (callback) => { //specs file uses cb as a parameter
   //return callback of getNextUniqueId
   ////if error throw error
   ////perform callback to get number
-  return zeroPaddedNumber(counter);
+  // return zeroPaddedNumber(counter);
 };
 
 
