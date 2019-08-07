@@ -44,23 +44,23 @@ exports.readAll = (callback) => {
           result[i].text = values[i];
         }
         callback(null, result);
-      })
+      });
     })
     .catch((err) => {
       console.log('Error:', err);
     });
-  };
+};
 
-    // fs.readdirAsync(`${exports.dataDir}`, (err, files) => {
-    //   if (err) {
-    //     throw err;
-    //   } else {
-    //     callback(null, _.map(files, (item) => {
-    //       console.log(item)
-    //       return {id: item.slice(0, -4), text: item.slice(0, -4);
-    //     });
-    //   }
-    // });
+// fs.readdirAsync(`${exports.dataDir}`, (err, files) => {
+//   if (err) {
+//     throw err;
+//   } else {
+//     callback(null, _.map(files, (item) => {
+//       console.log(item)
+//       return {id: item.slice(0, -4), text: item.slice(0, -4);
+//     });
+//   }
+// });
 // };
 
 exports.readOne = (id, callback) => {
